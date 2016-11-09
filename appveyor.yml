@@ -1,0 +1,21 @@
+version: 1.0.{build}
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+build:
+  publish_nuget: true
+  verbosity: minimal
+deploy:
+- provider: BinTray
+  username: eidjord
+  api_key:
+    secure: kAQ1TMYLfOwSpyCyaYGs7jBG/7+c+YVOHbqFGuN0Bpg6tOKaq7g2bCIgjia/84gB
+  subject: fint
+  repo: nuget
+  package: fint-model-csharp
+  artifact: /.*\.nupkg/
+  publish: true
+  override: true
