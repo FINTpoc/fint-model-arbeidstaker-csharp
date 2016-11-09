@@ -10,7 +10,7 @@ build:
   verbosity: minimal
 deploy:
 - provider: BinTray
-  username: {bintray_username}
+  username: eidjord
   api_key:
     secure: kAQ1TMYLfOwSpyCyaYGs7jBG/7+c+YVOHbqFGuN0Bpg6tOKaq7g2bCIgjia/84gB
   subject: fint
@@ -19,4 +19,3 @@ deploy:
   artifact: /.*\.nupkg/
   publish: true
   override: true
-  explode: true
