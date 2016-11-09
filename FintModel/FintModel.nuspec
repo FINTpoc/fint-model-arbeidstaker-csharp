@@ -11,7 +11,4 @@
     <releaseNotes>...</releaseNotes>
     <copyright>...</copyright>
   </metadata>
-  <files>
-    <file src="obj\Debug\FintModel.dll" target="lib"/>
-  </files>
 </package>
