@@ -10,7 +10,7 @@ build:
   verbosity: minimal
 deploy:
 - provider: BinTray
-  username: eidjord
+  username: {bintray_username}
   api_key:
     secure: kAQ1TMYLfOwSpyCyaYGs7jBG/7+c+YVOHbqFGuN0Bpg6tOKaq7g2bCIgjia/84gB
   subject: fint
