@@ -19,3 +19,4 @@ deploy:
   artifact: /.*\.nupkg/
   publish: true
   override: true
+  explode: true
