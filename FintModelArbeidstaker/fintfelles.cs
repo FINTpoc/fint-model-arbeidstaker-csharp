@@ -21,6 +21,29 @@ using System.Xml.Serialization;
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://fk.no/fint/arbeidstaker/1.0")]
+[System.Xml.Serialization.XmlRootAttribute("Arbeidstakere", Namespace="http://fk.no/fint/arbeidstaker/1.0", IsNullable=false)]
+public partial class ArbeidstakerListe {
+    
+    private ArbeidstakerType[] arbeidstakerField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("arbeidstaker")]
+    public ArbeidstakerType[] arbeidstaker {
+        get {
+            return this.arbeidstakerField;
+        }
+        set {
+            this.arbeidstakerField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://fk.no/fint/arbeidstaker/1.0")]
 [System.Xml.Serialization.XmlRootAttribute("Arbeidstaker", Namespace="http://fk.no/fint/arbeidstaker/1.0", IsNullable=false)]
 public partial class ArbeidstakerType : AbstraktPersonType {
     
