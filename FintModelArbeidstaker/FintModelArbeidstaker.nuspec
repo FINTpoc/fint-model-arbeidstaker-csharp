@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>fint-model-csharp</id>
+    <id>fint-model-arbeidstaker-csharp</id>
     <version>$version$</version>
     <title></title>
     <authors>ole.anders</authors>
